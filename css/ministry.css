@@ -84,6 +84,16 @@ background-color: rgba(255, 255, 255, .95);
   font-size: 18px;
   margin-top: 50px;
 }
+
+.goto-ministry-button:hover{
+
+  background:#39abf3;
+}
+
+.goto-ministry-button a{
+  color: #fff;
+  text-decoration: none;
+}
 #ministry-footer{
   margin-top: 3900px;
 

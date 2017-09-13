@@ -4,12 +4,14 @@
 //sub menu slide down(.sub-menu)
 $(document).ready(function() {
 
-  $('#sermon-wrapper > div').on('click', function() {
-    console.log("i am clicked");
-  });
   $('.sub-menu').hide().removeClass('fallback');
 
   $('.main-menu-list').on('hover', function() {
+    console.log("hello");
+    $('.sub-menu', this).slideToggle(200);
+  });
+
+  $('.main-menu-list').on('click', function() {
     console.log("hello");
     $('.sub-menu', this).slideToggle(200);
   });
@@ -25,6 +27,26 @@ $(document).ready(function() {
 
     console.log(distanceScrolled);
 
+//sidebar
+// Write your pseudo code here! HAPPY CODING! :)
+
+// When the user clicks on .hamburger
+$('.hamburger').on('click', function(){
+  console.log("clicked");
+  // Add the active class to the .sidebar (uses translateX to slide in)
+$('.sidebar').addClass('active');
+
+
+});
+
+  // When the user clicks on .close
+  $('.close-sidebar').on('click', function(){
+      // Remove the active class to the .sidebar (uses translateX to slide in)
+  $('.sidebar').removeClass('active');
+        // Add the active class to the .sidebar (uses translateX to slide in)
+
+
+    });
 
 
     // 2. ScrollTop

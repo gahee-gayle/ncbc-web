@@ -317,10 +317,92 @@ nav{
   padding: 10px 20px;
   display:none;
   text-align: right;
+  background: transparent;
+  text-decoration: none;
+}
+.hamburger:hover{
+  color:#35C1F9
+}
+
+/*sidebar*/
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #188EF0, #35C1F9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+}
+
+.sidebar a {
+  padding: 1rem 1rem;
+  font-size: 26px;
+}
+.sidebar ul{
+padding:0;
+}
+.sidebar li {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  list-style: none;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar li:hover {
+  background-color: #188EF0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 1.25px;
+  padding: .8rem;
+  display: block;
+}
+
+.sidebar li:first-child {
+  margin-top: 2em;
+}
+
+.sidebar .close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.content-inner {
+  max-width: 69em;
+  margin: 0 auto;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+	/* STEP #1: Right now the sidebar is always showing!
+  How can we move it off screen by default? Hint: look up translateX*/
+transition: all 0.3s ease;
+  /* STEP #4 (Wait until you've tested everything else):
+  How can we make the sidebar animate from the side, instead of jumping right away? */
 
 }
 
 
+.active {
+  transform: translateX(0px);
+
+
+	/*	STEP #2: When the active class gets added to the sidebar,
+  we want to move the sidebar back on screen using the transform property (translateX). */
+
+}
+
+/*	Step #3 (in main.js): Write your JS to add and remove the active class you created above!
+*/
 
 
 
@@ -636,432 +718,8 @@ section #main{
 }
 
 
-/* ==========================================================================
-what's next Styles
-========================================================================== */
-#sub_pg_header{
-  height: 0vh;
 
-}
 
-.sub_pg_nav{
-  background-color: #ffffff;
-}
-
-.monthly-image-wrppaer{
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  background-color: #ffffff;
-
-  padding: 70px 0 60px 0px;
-  width: 100%;
-}
-
-.monthly-poster{
-  background-image: url(../img/what_next/july_bg.jpg);
-  background-size:cover;
-  background-position: center;
-  max-width: 800px;
-  height: 300px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 140px;
-}
-
-.monthly-poster h1{
-  font-size: 160px;
-  display: block;
-  font-family: 'Miss Fajardose', cursive;
-  opacity: .8;
-  color: #ffffff;
-  letter-spacing: 10px;
-}
-
-
-.event-header{
-  display: block;
-  background-color: #ffffff;
-  /*max-width: 800px;*/
-  width: 100%;
-  margin: 0 auto;
-
-}
-
-.event-header h2{
-  display: block;
-  color: #4a4a4a;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  padding: 20px 0;
-  text-transform: uppercase;
-  max-width: 800px;
-  margin: 0 auto;
-  border-top: 2px #4a4a4a solid;
-  border-bottom: 2px #4a4a4a solid;
-}
-
-
-
-#event-row{
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-}
-.col-event-item{
-  /*background-color: pink;*/
-  flex-basis: 48%;
-  max-width: 800px;
-  /*height: 400px;*/
-  position: relative;
-
-}
-
-.col-event-item h4{
-  font-size: 22px;
-  font-weight: 500;
-  color: gray;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline;
-  outline: 3px solid gray;
-  outline-offset: -3px;
-  padding: 15px 20px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-
-}
-
-.el-shape{
-  display: block;
-  border-bottom: 1.5px solid gray;
-  border-left: 1.5px solid gray;
-  margin-left: 28px;
-  margin-top: 10px;
-  padding: 13px 50px;
-}
-
-.event-contents{
-  display: block;
-  margin-left: 28px;
-  margin-top: 25px;
-  /*padding: 13px 50px;*/
-}
-.event-contents p{
-  display: block;
-  margin: 0px;
-  letter-spacing: .5px;
-  line-height: 25px;
-  font-size: 17px;
-  font-weight: 400;
-  color: #4a4a4a;
-  /*padding: 13px 50px;*/
-}
-
-.event-divider{
-  display: block;
-  background-color: #ffffff;
-  /*max-width: 800px;*/
-  max-width: 800px;
-  margin: 0 auto;
-  border-top: 1px gray solid;
-  border-bottom: 1px gray solid;
-  padding: 2px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-
-}
-
-.past-event-wrapper{
-  background-color: #ffffff;
-  width: 100%;
-  color: #a9a9a9;
-  padding-bottom: 100px;
-}
-
-
-/* ==========================================================================
-Ministries
-========================================================================== */
-
-#photo-ministries{
-height: 100vh;
-display: block;
-background-image: url(../img/ministry/ministry_bg.jpg);
-background-size: cover;
-background-position: top 40px right;
-background-repeat: no-repeat;
-z-index: -100;
-}
-
-
-
-
-
-.ministry-intro-wrapper{
-  /*width: 100%;*/
-  display: block;
-  position: relative;
-  background-color: #ffffff;
-  /*margin-top: 70px;*/
-  margin-bottom: 200px;
-  padding-top: 70px;
-  padding-bottom: 100px;
-  width: 80%;
-  border: 2px solid #1E6ED1;
-}
-
-#elementary-wrapper{
-  display: flex;
-  justify-content: flex-end;
-
-}
-
-
-
-.ministry-intro{
-  margin-left: 230px;
-  padding-right: 200px;
-}
-
-.ministry-intro h3{
-  font-size: 25px;
-  padding: 0px;
-}
-
-.ministry-intro h4{
-  padding: 20px 0 15px 0;
-}
- .h6-color{
-  color: #34c0f9;
-  display: inline;
-}
-
-.ministry-intro p{
-  font-size: 20px;
-  padding: 0px;
-  margin-top: 20px;
-  color: #a9a9a9;
-
-
-}
-
-
-
-.goto-ministry-button{
-  padding: 10px 50px;
-  background: linear-gradient(-80deg, #0F52A7, #188EF0);  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  border: none;
-  margin: 0;
-  font-size: 18px;
-  margin-top: 50px;
-
-}
-.goto-ministry-button a{
-  color: #fff;
-  text-decoration: none;
-}
-#ministry-footer{
-  margin-top: 3300px;
-
-}
-
-
-
-/* ==========================================================================
-contact Styles / Plan a Visit
-========================================================================== */
-#contact-header{
-  background-image: url(../img/contact/pray_janette.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#plan-visit-header{
-  background-image: url(../img/plan_visit/plan_visit.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.header-visit-text{
-/*color:#35C1F9;*/
-/*text-shadow: 0px 0px .5px #35C1F9;*/
-}
-
-.service-time{
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  padding: 70px 0 70px 0px;
-    background: linear-gradient(-45deg, #0F52A7, #188EF0);
-}
-
-.form-wrapper{
-  background-color: transparent;
-
-  /*position:relative;*/
-  max-width: 900px;
-  margin: 0 auto;
-  height: 80vh;
-  top:150px;
-
-}
-
-.form-wrapper h1{
-  top: -470px;
-  left:336px;
-  /*position: absolute;*/
-  display: block;
-}
-
-form{
-  max-width: 800px;
-  background-color: #ffffff;
-  padding: 60px;
-  margin: 0 auto;
-  color: #4a4a4a;
-
-}
-
-#form-contact{
-  bottom: 50px;
-  left:75px;
-  /*position: absolute;*/
-}
-
-
-
-#church-map-wrapper{
-  padding:30px;
-  margin: 0 auto;
-  background: linear-gradient(-45deg, #0F52A7, #188EF0);
-}
-
-#church-map{
-  padding: 10px 30px;
-  margin: 0 auto;
-  background-color: transparent;
-  border: solid #ffffff 1px;
-  display: block;
-  letter-spacing: .35px;
-}
-
-#goto-preschool{
-  margin: 20px;
-}
-
-.visitor-form-wrapper{
-  background-color: transparent;
-  max-width: 900px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-#form-visitor {
-border:solid #333333 1px;
-}
-
-#form-visitor h3{
-margin-bottom: 30px;
-}
-
-input{
-  font-family: "lato";
-  font-size: 18px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: solid 1px #a9a9a9;
-}
-
-
-#first-name{
-  display: inline;
-  width: 48%;
-}
-
-
-#last-name{
-  display: inline;
-  width: 48%;
-}
-
-form .row{
-  display: flex;
-  justify-content: space-between;
-}
-
-#phone-1, #phone-2, #phone-3{
-  display: inline;
-  width: 32%;
-}
-
-label{
-  font-family: "lato";
-  font-size: 15px;
-  color: #333333;
-  display: block;
-  margin-bottom: 10px;
-}
-
-textarea{
-  display: block;
-  width: 100%;
-  padding: 10px;
-  height: 300px;
-  margin-bottom: 30px;
-    border: solid 1px #a9a9a9;
-
-
-
-
-
-}
-form button{
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background: linear-gradient(-45deg, #0F52A7, #188EF0);
-  color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-
-/* ----------------------------------------
-Placeholder Text
-------------------------------------------- */
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color: #929ca2;
-  font-size: 14px;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: #929ca2;
-  font-size: 14px;
-
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: #929ca2;
-  font-size: 14px;
-
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #929ca2;
-  font-size: 14px;
-
-}
 
 /* ==========================================================================
 Footer Styles
@@ -1176,12 +834,13 @@ Responsive Styles
 
 @media screen and (max-width: 450px){
 
-  nav a{
+  .main-menu{
     display: none;
   }
-  .hamburger{
-    display: block;
 
+  .hamburger{
+    cursor: pointer;
+    display: block;
   }
 
   .col-1-2{

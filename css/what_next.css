@@ -78,6 +78,7 @@ what's next Styles
   justify-content: space-between;
   padding-top: 50px;
 }
+
 .col-event-item{
   flex-basis: 48%;
   max-width: 800px;
