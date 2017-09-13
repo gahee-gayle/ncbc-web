@@ -4,9 +4,6 @@
 //sub menu slide down(.sub-menu)
 $(document).ready(function() {
 
-  $('#sermon-wrapper > div').on('click', function() {
-    console.log("i am clicked");
-  });
   $('.sub-menu').hide().removeClass('fallback');
 
   $('.main-menu-list').on('hover', function() {
