@@ -271,6 +271,14 @@ LEADERSHIP
   display: block;
   color: #4a4a4a;
 }
+.cell a{
+  text-decoration: none;
+  color: #35C1F9;
+  margin-top: 5px;
+  font-style: italic;
+  display: inline-block;
+
+}
 
 #grid-wrapper-1.cell:nth-of-type(1) {
   grid-column:1

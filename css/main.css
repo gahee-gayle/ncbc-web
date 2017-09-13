@@ -585,7 +585,6 @@ section #main{
     color: white;
     float: right;
     font-size: 28px;
-    font-weight: bold;
     position:absolute;
     top:0;
     right:20px;
@@ -593,7 +592,7 @@ section #main{
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #35C1F9;
     text-decoration: none;
     cursor: pointer;
 }

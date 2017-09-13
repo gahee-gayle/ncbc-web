@@ -86,7 +86,7 @@ form{
   background-color: #ffffff;
 }
 
-#church-map{
+#church-map {
   padding: 10px 0px;
   margin: 0;
   background-color: transparent;
@@ -98,15 +98,66 @@ form{
   max-width: 180px;
   margin-left: 30px;
 }
-
-#church-map:hover{
-  color: #188EF0;
+#church-map:hover {
   background-color: #ffffff;
 }
 
-/*#goto-preschool{
-  margin: 20px;
-}*/
+#church-map a{
+  text-decoration: none;
+  color: #ffffff;
+}
+#church-map:hover a{
+  color: #188EF0;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 80vw;
+  height: auto;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+
+.close-map{
+    color: #118ef0;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: normal;
+
+
+  }
+
+.close-map:hover {
+    color: #35C1F9;
+   }
+
+
 
 .visitor-form-wrapper{
   background-color: transparent;
