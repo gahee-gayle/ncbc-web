@@ -2,99 +2,92 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Bonbon|Miss+Fajardose');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 /* ==========================================================================
 Base styles:
 ========================================================================== */
+
+
 /* Fix to include padding and border in the total width for each element */
+
 * {
   box-sizing: border-box;
 }
 
+
 /* Fix for responsive images */
+
 img {
   max-width: 100%;
 }
-
-
 
 
 /* ==========================================================================
 Global Styles
 ========================================================================== */
 
-Body{
+Body {
   font-family: "Lato", sans-serif;
-
   color: white;
   background-color: #ffffff;
-
 }
-
-
 
 
 /* ==========================================================================
 Text Styles
 ========================================================================== */
-h1{
+
+h1 {
   font-size: 60px;
   line-height: 85px;
   /*text-transform: uppercase;*/
   margin: 0;
-
-
 }
 
-h2{
+h2 {
   color: #ffffff;
   font-size: 30px;
   letter-spacing: 3px;
   margin: 0;
-
 }
 
-h3{
+h3 {
   color: #4a4a4a;
   letter-spacing: 1px;
   /*padding-bottom: 30px;*/
-  margin:0;
-
+  margin: 0;
 }
 
-h4{
+h4 {
   color: #4a4a4a;
   font-size: 24px;
   line-height: 25px;
   margin: 0;
-
-
 }
 
-h5{
+h5 {
   color: #4a4a4a;
   font-size: 20px;
   letter-spacing: .5px;
   margin: 0;
-
 }
 
-h6{
+h6 {
   color: #4a4a4a;
   letter-spacing: .5px;
   font-size: 15px;
-
-
 }
 
 
 /* ==========================================================================
 Header Stytles
 ========================================================================== */
-header{
-  position:relative;
+
+header {
+  position: relative;
   font-weight: 700;
   /*background-color: #a9a9a9;*/
-  height: 90vh;
+  /*height: 90vh;*/
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -102,7 +95,7 @@ header{
   /*box-shadow: 10px 10px 5px #888888;*/
 }
 
-header button{
+header button {
   padding: 12px 50px;
   background-color: #4a4a4a;
   font-size: 20px;
@@ -112,7 +105,7 @@ header button{
   margin: 0 15px;
 }
 
-#visit, #SOB{
+#visit, #SOB {
   width: 247px;
   margin-bottom: 20px;
 }
@@ -121,13 +114,13 @@ img {
   max-width: 100%;
 }
 
-.logo{
+.logo {
   background-color: none;
   display: inline-block;
   color: white;
 }
 
-.text-buttons-wrap{
+.text-buttons-wrap {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
@@ -135,25 +128,21 @@ img {
   align-items: center;
   /*max-width: 1024px;*/
   margin: 0 auto;
-
 }
 
-.header-text-button{
+.header-text-button {
   margin-top: 70px;
-text-shadow: 0px 0px .5px #35C1F9;
-
+  text-shadow: 0px 0px .5px #35C1F9;
 }
 
-header h1{
+header h1 {
   padding-bottom: 150px;
   display: block;
-
 }
 
-.header-visit-text h1{
+.header-visit-text h1 {
   padding-bottom: 0px;
   display: block;
-
 }
 
 header a button {
@@ -175,16 +164,17 @@ header a button:hover {
   letter-spacing: 1px;*/
 }
 
-#video-home{
+#video-home {
   z-index: -100;
-  position:absolute;
-
+  position: absolute;
 }
+
 
 /* ==========================================================================
 Nav Styles
 ========================================================================== */
-.nav-wrapper{
+
+.nav-wrapper {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -194,7 +184,7 @@ Nav Styles
   background-color: #ffffff;
 }
 
-.home-nav-wrapper{
+.home-nav-wrapper {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -205,14 +195,11 @@ Nav Styles
   transition: all .2s ease;
 }
 
-.change-bgcolor{
-  background-color:#ffffff;
-
-
+.change-bgcolor {
+  background-color: #ffffff;
 }
 
-
-nav{
+nav {
   display: block;
   display: flex;
   align-items: center;
@@ -221,71 +208,68 @@ nav{
   margin: 0 auto;
 }
 
-
-
 .main-menu {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+
 .main-menu-list {
   /*display:inline-block;*/
   position: relative;
 }
 
-.main-menu-list  a {
+.main-menu-list a {
   display: inline-block;
-  padding:10px 25px;
-  color:#35c1f9;
+  padding: 10px 25px;
+  color: #35c1f9;
   text-decoration: none;
 }
 
-.main-menu-list:hover{
-  background:#0F52A7;
+.main-menu-list:hover {
+  background: #0F52A7;
 }
 
-.main-menu-list:hover a{
+.main-menu-list:hover a {
   color: #fff;
 }
 
-
-.active{
+.active {
   color: #188EF0 !important;
 }
-.sub-item-color{
+
+.sub-item-color {
   color: #188ef0;
 }
 
-
 .sub-menu {
   position: absolute;
-  width:160%;
-  background:#35C1F9;
+  width: 160%;
+  background: #35C1F9;
   padding: 0;
   text-align: left;
 }
 
-
 .sub-item {
   /*display: block;*/
-  margin:0;
+  margin: 0;
   /*padding-left:15px;
   padding-right: 15px;*/
   /*max-width:150%;*/
-
 }
-.sub-item a {
-  display:block;
-  padding:10px 25px;
 
+.sub-item a {
+  display: block;
+  padding: 10px 25px;
 }
 
 .sub-item:hover a {
-  background:#188EF0;
+  background: #188EF0;
   color: #fff;
 }
+
 .fallback {
-  display:none;
+  display: none;
 }
 
 
@@ -304,27 +288,30 @@ nav{
   color:#35C1F9;
 }*/
 
-
-#logo{
+#logo {
   max-height: 45px;
   flex-basis: 24%;
   padding-top: 10px;
 }
-#menu_wrapper{
+
+#menu_wrapper {
   flex-basis: 73%;
 }
+
 .hamburger {
   color: #35C1F9;
   font-size: 27px;
   padding: 10px 20px;
-  display:none;
+  display: none;
   text-align: right;
   background: transparent;
   text-decoration: none;
 }
-.hamburger:hover{
-  color:#188ef0;
+
+.hamburger:hover {
+  color: #188ef0;
 }
+
 
 /*sidebar*/
 
@@ -338,27 +325,28 @@ nav{
   padding: 20px 0;
 }
 
-.sidebar h2{
+.sidebar h2 {
   font-size: 18px;
   padding: 10px 0;
   margin-top: 20px;
   background-color: #0F52A7;
-
 }
-
 
 .sidebar a {
   padding: 1rem 1rem;
   font-size: 16px;
 }
-.sidebar ul{
-padding:0;
+
+.sidebar ul {
+  padding: 0;
 }
+
 .sidebar li {
-  border-top: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   list-style: none;
   transition: all 300ms ease-in-out;
 }
+
 
 /*.sidebar li:hover {
   background-color: #0F52A7;
@@ -389,7 +377,6 @@ padding:0;
   display: block;
 }
 
-
 .content-inner {
   max-width: 69em;
   margin: 0 auto;
@@ -397,59 +384,53 @@ padding:0;
 
 .sidebar {
   transform: translateX(-100%);
-	/* STEP #1: Right now the sidebar is always showing!
+  /* STEP #1: Right now the sidebar is always showing!
   How can we move it off screen by default? Hint: look up translateX*/
-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   /* STEP #4 (Wait until you've tested everything else):
   How can we make the sidebar animate from the side, instead of jumping right away? */
-
 }
-
 
 .active {
   transform: translateX(0px);
-
-
-	/*	STEP #2: When the active class gets added to the sidebar,
+  /*	STEP #2: When the active class gets added to the sidebar,
   we want to move the sidebar back on screen using the transform property (translateX). */
-
 }
+
 
 /*	Step #3 (in main.js): Write your JS to add and remove the active class you created above!
 */
 
 
-
-
 /* ==========================================================================
 Main Styles
 ========================================================================== */
-main{
+
+main {
   /*padding: 100px 0 100px 0px;*/
   margin: 0 auto;
   display: block;
 }
 
-
-.pg_title_banner{
+.pg_title_banner {
   margin: 0 auto;
   display: block;
   text-align: center;
   padding: 15px 0px;
   width: 100%;
   margin-top: 71px;
-  background: linear-gradient(-110deg, rgba(24,142, 240, 0.95), rgba(53,193,249,0.95));
+  background: linear-gradient(-110deg, rgba(24, 142, 240, 0.95), rgba(53, 193, 249, 0.95));
   text-transform: uppercase;
   position: fixed;
   z-index: 99;
   opacity: .9;
 }
 
-.pg_title_banner h2{
+.pg_title_banner h2 {
   font-size: 25px;
 }
 
-#sub-main-photo{
+#sub-main-photo {
   height: 100vh;
   display: block;
   /*background-image: url(../img/ministry/ministry_bg.jpg);*/
@@ -457,25 +438,21 @@ main{
   background-position: top 40px right;
   background-repeat: no-repeat;
   z-index: -100;
-
 }
 
-.list-wrapper{
+.list-wrapper {
   background-color: #ffffff;
   width: 100%;
   margin-bottom: 100px;
-
 }
 
-#ministry_wrapper{
+#ministry_wrapper {
   position: absolute;
-  top:700px;
+  top: 700px;
   display: block;
-
 }
 
-
-#main-header{
+#main-header {
   display: block;
   background-color: #ffffff;
   padding: 70px 0px 70px 0px;
@@ -483,8 +460,7 @@ main{
   margin: 0 auto;
 }
 
-
-#main-header h2{
+#main-header h2 {
   color: #4a4a4a;
   display: block;
   margin: 0 auto;
@@ -492,7 +468,7 @@ main{
   padding: 0 140px;
 }
 
-#main-header p{
+#main-header p {
   padding-top: 30px;
   font-size: 22px;
   line-height: 35px;
@@ -501,38 +477,33 @@ main{
 }
 
 
-
 /* ==========================================================================
 Home Page
 ========================================================================== */
-#home-header{
-  height: 100vh;
 
+#home-header {
+  height: 100vh;
   background-size: cover;
-  background-position: -250px 10px;
+  background-position-x:-300px;
   background-repeat: no-repeat;
   /*z-index: -99;*/
-
 }
 
-
-.about-service{
+.about-service {
   margin: 0 auto;
   display: block;
   text-align: center;
   padding: 120px 0 140px 0px;
   background: linear-gradient(-45deg, #0F52A7, #188EF0);
-
 }
 
-.about-service p{
+.about-service p {
   font-size: 27px;
   letter-spacing: 1px;
   line-height: 60px;
-
 }
 
-#direction-btn{
+#direction-btn {
   padding: 10px 50px;
   color: #ffffff;
   font-size: 20px;
@@ -545,14 +516,12 @@ Home Page
   background-color: transparent;
 }
 
-#direction-btn:hover{
+#direction-btn:hover {
   color: #188EF0;
   background-color: #ffffff;
 }
 
-
-
-#church-map #goto-preschool{
+#church-map #goto-preschool {
   padding: 10px 50px;
   background-color: #a9a9a9;
   color: #4a4a4a;
@@ -566,37 +535,35 @@ Home Page
   margin-bottom: 30px;
 }
 
-#church-map-wrapper{
+#church-map-wrapper {
   margin: 0 auto;
   width: 100%;
   background-color: #4a4a4a;
 }
 
-section #main{
+section #main {
   display: block;
   width: 100%;
   margin: 0 auto;
-
 }
-.row{
+
+.row {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   margin: 0 auto;
 }
 
-
-.col-1-2{
+.col-1-2 {
   height: 45vh;
   flex-basis: 50%;
   text-align: center;
   max-height: 400px;
-  max-width: 75  0px;
-
+  max-width: 75 0px;
 }
 
 .blue-overlay {
-  background-color: rgba(24,142,240,.25);
+  background-color: rgba(24, 142, 240, .25);
   opacity: 1;
   z-index: 100;
   transition: all .2s ease-in-out;
@@ -604,111 +571,107 @@ section #main{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.blue-overlay:hover{
-  opacity:0;
+.blue-overlay:hover {
+  opacity: 0;
 }
-.blue-overlay h2{
+
+.blue-overlay h2 {
   opacity: 1;
   height: 45vh;
-
 }
-#box-1{
+
+#box-1 {
   background-image: url("../img/home_what_next_01.jpg");
   background-size: cover;
-
 }
 
-
-
-
-#box-2{
+#box-2 {
   background-image: url("../img/home_small_group_01.jpg");
   background-size: cover;
-
 }
 
-
-#box-3{
+#box-3 {
   background-image: url("../img/home_serving_oppo_01.jpg");
   background-size: cover;
-
 }
 
-
-
-#box-4{
+#box-4 {
   background-image: url("../img/home_sermons_01.jpg");
   background-size: cover;
-
 }
 
-
-
-#main .row a{
+#main .row a {
   text-decoration: none;
-
-
 }
+
 
 /* The Modal (background) */
+
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 10000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.3s;
-    animation-name: fadeIn;
-    animation-duration: 0.3s
-    display:flex !important;
-    align-items: center;
+  position: fixed;
+  /* Stay in place */
+  z-index: 10000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-duration: 0.3s display:flex !important;
+  align-items: center;
 }
+
 
 /* Modal Content */
+
 .modal-content {
-    background-color: #fefefe;
-    width: 60%;
-    height:60%;
-    margin: 0 auto;
-    position:relative;
-
-
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
+  background-color: #fefefe;
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
 }
+
 
 /* The Close Button */
+
 .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    position:absolute;
-    top:0;
-    right:20px;
+  color: white;
+  float: right;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 
-.close:hover,
-.close:focus {
-    color: #35C1F9;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover, .close:focus {
+  color: #35C1F9;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-header {
-    padding: 20px 16px 20px 16px;
-    background-color: #188EF0;
-    color: white;
-    position: relative;
+  padding: 20px 16px 20px 16px;
+  background-color: #188EF0;
+  color: white;
+  position: relative;
 }
 
 .modal-body {
@@ -720,59 +683,71 @@ section #main{
 }
 
 
-
 /* Add Animation */
+
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
-
-
-
 
 
 /* ==========================================================================
 Footer Styles
 ========================================================================== */
 
-footer{
+footer {
   background-color: #a9a9a9;
   margin: 0 auto;
   display: block;
 }
 
-footer .contact{
+footer .contact {
   background: linear-gradient(-45deg, #0F52A7, #188EF0, #35C1F9);
   padding: 30px 100px 30px 0;
-
   background-color: #7f8080;
   display: flex;
   justify-content: flex-end;
   align-content: center;
-
-
 }
 
-
-footer button{
+footer button {
   text-align: center;
   padding: 10px 50px 10px 50px;
-
   border: white solid 2px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -785,7 +760,6 @@ footer a button {
   transition: all, .3s ease-in-out;
   color: #ffffff;
   background-color: transparent;
-
 }
 
 footer a button:hover {
@@ -797,22 +771,18 @@ footer a button:hover {
   letter-spacing: 1px;*/
 }
 
-
-
-footer .icons{
+footer .icons {
   display: inline;
   margin-right: 30px;
-
-
 }
 
-footer .icons a{
+footer .icons a {
   display: inline-block;
   margin-right: 10px;
   color: #ffffff;
 }
 
-footer .fa{
+footer .fa {
   padding: 0 15px;
 }
 
@@ -820,67 +790,54 @@ footer .fa{
   margin: 0 60px;
 }
 
-
-.footer-nav{
+.footer-nav {
   background: linear-gradient(-200deg, #188EF0, #0F52A7, #0F52A7);
   background-color: #4a4a4a;
-
   margin: 0 auto;
   display: block;
   text-align: center;
   padding: 120px 0 70px 0px;
-
 }
 
-.footer-nav p{
+.footer-nav p {
   font-size: 27px;
   letter-spacing: 1px;
   line-height: 60px;
-
 }
 
-#copyright{
+#copyright {
   font-size: 14px;
-
 }
+
 
 /* ==========================================================================
 Responsive Styles
 ========================================================================== */
 
-
-@media screen and (max-width: 1024px){
-  .column-1-2{
+@media screen and (max-width: 1024px) {
+  .column-1-2 {
     flex-basis: 50%;
   }
-
-
 }
 
-@media screen and (max-width: 450px){
-
-  video, .main-menu{
+@media screen and (max-width: 450px) {
+  video, .main-menu {
     display: none;
   }
-
-  #home-header{
+  #home-header {
     display: block;
     z-index: auto;
     background-image: url(../img/main.jpg);
+    margin-top: 0;
   }
-
-
-
-.header-text-button{
-  padding-top: 50px;
-}
-  .hamburger{
+  .header-text-button {
+    padding-top: 50px;
+  }
+  .hamburger {
     cursor: pointer;
     display: block;
   }
-
-  .col-1-2{
+  .col-1-2 {
     flex-basis: 100%;
   }
-
 }
