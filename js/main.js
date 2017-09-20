@@ -27,28 +27,6 @@ $(document).ready(function() {
 
     console.log(distanceScrolled);
 
-//sidebar
-// Write your pseudo code here! HAPPY CODING! :)
-
-// When the user clicks on .hamburger
-$('.hamburger').on('click', function(){
-  console.log("clicked");
-  // Add the active class to the .sidebar (uses translateX to slide in)
-$('.sidebar').addClass('active');
-
-
-});
-
-  // When the user clicks on .close
-  $('.close-sidebar').on('click', function(){
-      // Remove the active class to the .sidebar (uses translateX to slide in)
-  $('.sidebar').removeClass('active');
-        // Add the active class to the .sidebar (uses translateX to slide in)
-
-
-    });
-
-
     // 2. ScrollTop
     //If Window scrolls up more than 140px, the transparent backgound will change to white.
     // if the user scolldown 140px the trasparent background colors changes to "white"
@@ -64,9 +42,28 @@ $('.sidebar').addClass('active');
 
   });
 
+  //sidebar
+  // Write your pseudo code here! HAPPY CODING! :)
+ 
+  // When the user clicks on .hamburger
+  $('.hamburger').on('click', function() {
+    console.log("clicked");
+    // Add the active class to the .sidebar (uses translateX to slide in)
+    $('.sidebar').addClass('active');
+
+
+  });
+
+  // When the user clicks on .close
+  $('.close-sidebar').on('click', function() {
+    // Remove the active class to the .sidebar (uses translateX to slide in)
+    $('.sidebar').removeClass('active');
+    // Add the active class to the .sidebar (uses translateX to slide in)
+  });
+
 
   // Get the modal
-  $('.modal').hide()
+  $('.modal').hide();
   var modal = document.getElementById('myModal');
 
   // Get the button that opens the modal

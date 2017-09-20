@@ -112,8 +112,9 @@ header button{
   margin: 0 15px;
 }
 
-#visit{
+#visit, #SOB{
   width: 247px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -307,12 +308,13 @@ nav{
 #logo{
   max-height: 45px;
   flex-basis: 24%;
+  padding-top: 10px;
 }
 #menu_wrapper{
   flex-basis: 73%;
 }
 .hamburger {
-  background-color: #191919;
+  color: #35C1F9;
   font-size: 27px;
   padding: 10px 20px;
   display:none;
@@ -321,7 +323,7 @@ nav{
   text-decoration: none;
 }
 .hamburger:hover{
-  color:#35C1F9
+  color:#188ef0;
 }
 
 /*sidebar*/
@@ -336,9 +338,18 @@ nav{
   padding: 20px 0;
 }
 
+.sidebar h2{
+  font-size: 18px;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #0F52A7;
+
+}
+
+
 .sidebar a {
   padding: 1rem 1rem;
-  font-size: 26px;
+  font-size: 16px;
 }
 .sidebar ul{
 padding:0;
@@ -349,9 +360,9 @@ padding:0;
   transition: all 300ms ease-in-out;
 }
 
-.sidebar li:hover {
-  background-color: #188EF0;
-}
+/*.sidebar li:hover {
+  background-color: #0F52A7;
+}*/
 
 .sidebar a {
   color: white;
@@ -370,11 +381,14 @@ padding:0;
 
 .sidebar .close-sidebar {
   position: absolute;
-  top: 10px;
+  top: -7px;
   right: 20px;
   text-transform: none;
   font-size: 20px;
+  /*padding: 10px;*/
+  display: block;
 }
+
 
 .content-inner {
   max-width: 69em;
@@ -491,6 +505,17 @@ main{
 /* ==========================================================================
 Home Page
 ========================================================================== */
+#home-header{
+  height: 100vh;
+
+  background-size: cover;
+  background-position: -250px 10px;
+  background-repeat: no-repeat;
+  /*z-index: -99;*/
+
+}
+
+
 .about-service{
   margin: 0 auto;
   display: block;
@@ -775,14 +800,15 @@ footer a button:hover {
 
 
 footer .icons{
-  display: inline-block;
+  display: inline;
   margin-right: 30px;
+
 
 }
 
 footer .icons a{
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   color: #ffffff;
 }
 
@@ -826,18 +852,28 @@ Responsive Styles
 @media screen and (max-width: 1024px){
   .column-1-2{
     flex-basis: 50%;
-
-
   }
+
 
 }
 
 @media screen and (max-width: 450px){
 
-  .main-menu{
+  video, .main-menu{
     display: none;
   }
 
+  #home-header{
+    display: block;
+    z-index: auto;
+    background-image: url(../img/main.jpg);
+  }
+
+
+
+.header-text-button{
+  padding-top: 50px;
+}
   .hamburger{
     cursor: pointer;
     display: block;
