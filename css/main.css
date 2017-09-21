@@ -745,6 +745,10 @@ footer .contact {
   align-content: center;
 }
 
+.contact-content {
+  margin: 0 60px;
+}
+
 footer button {
   text-align: center;
   padding: 10px 50px 10px 50px;
@@ -786,9 +790,7 @@ footer .fa {
   padding: 0 15px;
 }
 
-.contact-content {
-  margin: 0 60px;
-}
+
 
 .footer-nav {
   background: linear-gradient(-200deg, #188EF0, #0F52A7, #0F52A7);
@@ -821,7 +823,10 @@ Responsive Styles
 }
 
 @media screen and (max-width: 450px) {
-  video, .main-menu {
+  video {
+    display: none;
+  }
+ .main-menu {
     display: none;
   }
   #home-header {
@@ -837,6 +842,10 @@ Responsive Styles
     cursor: pointer;
     display: block;
   }
+  .contact-content {
+    margin: 0 auto;
+  }
+
   .col-1-2 {
     flex-basis: 100%;
   }
