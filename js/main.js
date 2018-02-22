@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   //sidebar
   // Write your pseudo code here! HAPPY CODING! :)
- 
+
   // When the user clicks on .hamburger
   $('.hamburger').on('click', function() {
     console.log("clicked");
